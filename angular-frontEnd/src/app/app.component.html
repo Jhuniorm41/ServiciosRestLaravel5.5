@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Base64 Upload</h2>
+      <base64-upload></base64-upload>
+    </div>
+    <div class="col-sm-6">
+      <h2>Formdata Upload</h2>
+      <formdata-upload></formdata-upload>
+    </div>
+  </div>
+  <br />
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Resumen</th>
+        <th scope="col">autor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of this.listaLibro">
+        <th>{{ libro.id }}</th>
+        <td>{{ libro.resumen }}</td>
+        <td>{{ libro.autor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
